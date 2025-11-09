@@ -1,0 +1,107 @@
+# WorldEditDisplay 简体中文语言文件
+# Language: 简体中文
+# Code: zh_cn
+
+# 通用消息
+general:
+  prefix: "<gold>[WorldEditDisplay]</gold>"
+  no_permission: "<red>你没有权限使用此命令！"
+  player_only: "<red>此命令只能由玩家执行！"
+  reload_success: "<green>[WorldEditDisplay] 配置重新加载成功！"
+  reload_failed: "<red>[WorldEditDisplay] 配置重新加载失败！请查看控制台了解详情。"
+
+# 玩家设置命令
+command:
+  wedisplay:
+    set:
+      usage: "<red>用法: /wedisplay set <renderer> <setting> <value>"
+      example: "<red>示例: /wedisplay set cuboid edge_material DIAMOND_BLOCK"
+      invalid_renderer: "<red>无效的渲染器类型！"
+      available_renderers: "<red>可用的渲染器: cuboid, cylinder, ellipsoid, polygon, polyhedron"
+      invalid_value: "<red>无效的设置值！"
+      success: "<green>已设置 %s.%s = %s"
+      success_hint: "<gray>选区会在下次更新时应用新设置"
+      failed: "<red>设置失败！"
+      failed_hint: "<red>可能原因：数值超过服务器允许的上限"
+    
+    reset:
+      usage: "<red>用法: /wedisplay reset <renderer> [setting]"
+      example1: "<red>示例: /wedisplay reset cuboid edge_material"
+      example2: "<red>示例: /wedisplay reset cuboid (重置整个渲染器)"
+      invalid_renderer: "<red>无效的渲染器类型！"
+      success_setting: "<green>已重置 %s.%s 为服务器默认值"
+      success_all: "<green>已重置 %s 的所有设置为服务器默认值"
+    
+    show:
+      invalid_renderer: "<red>无效的渲染器类型！"
+      title: "<yellow>========== 你的个人渲染设置 =========="
+      hint: "<gray>使用 <white>/wedisplay show <renderer> <gray>查看详细设置"
+      available: "<gold>可用的渲染器:"
+      cuboid: "<white>- cuboid <gray>(长方体)"
+      cylinder: "<white>- cylinder <gray>(圆柱体)"
+      ellipsoid: "<white>- ellipsoid <gray>(椭球体)"
+      polygon: "<white>- polygon <gray>(多边形)"
+      polyhedron: "<white>- polyhedron <gray>(多面体)"
+      renderer_title: "<yellow>========== %s 渲染设置 =========="
+      modify_hint: "<gray>使用 <white>/wedisplay set <renderer> <setting> <value> <gray>修改设置"
+    
+    reload:
+      success: "<green>已重新加载你的个人设置！"
+    
+    lang:
+      usage: "<red>用法: /wedisplay lang <language>"
+      example: "<red>示例: /wedisplay lang zh_cn"
+      disabled: "<red>服务器管理员已停用此功能！"
+      success: "<green>语言已切换为: %s"
+      invalid: "<red>不支持的语言！可用语言: %s"
+      current: "<gold>当前语言: <white>%s"
+    
+    toggle:
+      enabled: "<green>已开启 WorldEdit 选区渲染！"
+      disabled: "<yellow>已关闭 WorldEdit 选区渲染！"
+    
+    help:
+      title: "<yellow>========== WorldEditDisplay 个人设置 =========="
+      set: "<gold>/wedisplay set <renderer> <setting> <value>"
+      set_desc: "<gray>  设置个人参数"
+      reset: "<gold>/wedisplay reset <renderer> [setting]"
+      reset_desc: "<gray>  重置为服务器默认"
+      show: "<gold>/wedisplay show [renderer]"
+      show_desc: "<gray>  显示当前设置"
+      reload: "<gold>/wedisplay reloadplayer"
+      reload_desc: "<gray>  重载个人设置"
+      lang: "<gold>/wedisplay lang [language]"
+      lang_desc: "<gray>  设置语言"
+      toggle: "<gold>/wedisplay toggle"
+      toggle_desc: "<gray>  切换渲染开关"
+
+# 设置项名称
+settings:
+  edge_material: "<gold>边缘材质: <white>%s"
+  point1_material: "<gold>点1材质: <white>%s"
+  point2_material: "<gold>点2材质: <white>%s"
+  grid_material: "<gold>网格材质: <white>%s"
+  edge_thickness: "<gold>边缘厚度: <white>%.2f"
+  grid_thickness: "<gold>网格厚度: <white>%.2f"
+  vertex_marker_size: "<gold>顶点标记大小: <white>%.2f"
+  height_grid_division: "<gold>高度网格分割: <white>%d"
+  circle_material: "<gold>圆形材质: <white>%s"
+  center_material: "<gold>中心材质: <white>%s"
+  center_line_material: "<gold>中心线材质: <white>%s"
+  circle_thickness: "<gold>圆形厚度: <white>%.2f"
+  center_line_thickness: "<gold>中心线厚度: <white>%.2f"
+  center_thickness: "<gold>中心厚度: <white>%.2f"
+  min_circle_segments: "<gold>最小圆形分段: <white>%d"
+  max_circle_segments: "<gold>最大圆形分段: <white>%d"
+  target_segment_length: "<gold>目标分段长度: <white>%.2f"
+  radius_grid_division: "<gold>半径网格分割: <white>%d"
+  line_material: "<gold>线条材质: <white>%s"
+  center_marker_size: "<gold>中心标记大小: <white>%.2f"
+  min_segments: "<gold>最小分段: <white>%d"
+  max_segments: "<gold>最大分段: <white>%d"
+  vertex_material: "<gold>顶点材质: <white>%s"
+  vertical_material: "<gold>垂直材质: <white>%s"
+  vertical_thickness: "<gold>垂直厚度: <white>%.2f"
+  vertex0_material: "<gold>顶点0材质: <white>%s"
+  vertex_size: "<gold>顶点大小: <white>%.2f"
+  vertex_thickness: "<gold>顶点厚度: <white>%.2f"
