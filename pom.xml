@@ -74,7 +74,7 @@
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
-      <version>1.21.8-R0.1-SNAPSHOT</version>
+      <version>1.21.10-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -83,9 +83,9 @@
       <version>2.10.1</version>
     </dependency>
     <dependency>
-      <groupId>me.tofaa.entitylib</groupId>
+      <groupId>io.github.tofaa2</groupId>
       <artifactId>spigot</artifactId>
-      <version>+ed0a178-SNAPSHOT</version>
+      <version>+eba7ada-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
